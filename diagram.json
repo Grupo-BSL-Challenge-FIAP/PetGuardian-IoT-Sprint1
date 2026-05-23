@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Sofia Siqueira",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 4.84, "attrs": {} },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -3.2,
+      "left": 216.8,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -135.7, "left": -38.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -135.7, "left": 76.6, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -132,
+      "left": 222.6,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -134.1, "left": -159, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-105.6", "v-19.2" ] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "v-19.1", "h-216.19" ] ],
+    [ "lcd1:SDA", "esp:21", "orange", [ "h-9.6", "v29" ] ],
+    [ "lcd1:SCL", "esp:22", "orange", [ "h-19.2", "v-9.3" ] ],
+    [ "bz1:2", "esp:14", "red", [ "v67.2", "h-29.2", "v115.2" ] ],
+    [ "bz1:1", "esp:GND.2", "black", [ "v57.6", "h-28.8", "h-115.2" ] ],
+    [ "pot1:GND", "esp:GND.2", "black", [ "v86.4", "h115.2" ] ],
+    [ "pot2:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "pot1:SIG", "esp:34", "blue", [ "v0" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot2:VCC", "esp:3V3", "red", [ "v67.2", "h-116.15" ] ],
+    [ "pot2:SIG", "esp:32", "blue", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:SDA", "esp:15", "#8f4814", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
