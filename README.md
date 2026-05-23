@@ -79,14 +79,14 @@ Quando o status **Risco** é confirmado por 3 leituras consecutivas, o buzzer é
 ## ✅ Projeto funcionando
 
 - Display exibindo temperatura, frequência cardíaca, score de saúde e alertas:
-  1. Tela Health Score
-    ![Screenshot da tela de Status (Health Score)](assets/health-score.png)
+1. Tela Health Score
+   ![Screenshot da tela de Status (Health Score)](assets/health-score.png)
 
-  2. Tela Frequência cardiaca e Temperatura
-    ![Screenshot da tela de Frequência cardiaca e Temperatura](assets/temperature-bpm.png)
+2. Tela Frequência cardiaca e Temperatura
+   ![Screenshot da tela de Frequência cardiaca e Temperatura](assets/temperature-bpm.png)
     
-  3. Tela Alerta
-    ![Screenshot da tela de Alerta](assets/alert.png)
+3. Tela Alerta
+   ![Screenshot da tela de Alerta](assets/alert.png)
 
 
 - Envio de dados para API REST em formato JSON:
@@ -99,6 +99,7 @@ Quando o status **Risco** é confirmado por 3 leituras consecutivas, o buzzer é
 ---
 
 ## 🎥 Vídeo de demonstração
+Clique aqui para assistir ao vídeo de demonstração: [Pet Guardian - Pitch](https://www.youtube.com)
 
 [![Pet Guardian - Pitch](https://img.youtube.com/vi/PnYiN1Zg5eQ/0.jpg)](https://www.youtube.com)
 
@@ -132,7 +133,7 @@ Quando o status **Risco** é confirmado por 3 leituras consecutivas, o buzzer é
       <img src="https://github.com/manuelalacerda.png" width="120" style="border-radius: 50%;"/>
     </td>
     <td>
-      <b>Luna de Carvalho Guimarães</b><br/>
+      <b>Manuela de Lacerda Soares</b><br/>
       <b>RM:</b> 564887 &nbsp;&nbsp;|&nbsp;&nbsp;<b>Turma:</b> 2TDSPG - FIAP <br/>
     </td>
   </tr>
