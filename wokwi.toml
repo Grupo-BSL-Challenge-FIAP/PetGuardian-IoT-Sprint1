@@ -1,4 +1,4 @@
 [wokwi]
 version = 1
-firmware = ''
-elf = ''
+firmware = 'pet-guardian-monitoring/build/esp32.esp32.esp32doit-devkit-v1/pet-guardian-monitoring.ino.bin'
+elf = 'pet-guardian-monitoring/build/esp32.esp32.esp32doit-devkit-v1/pet-guardian-monitoring.ino.elf'
