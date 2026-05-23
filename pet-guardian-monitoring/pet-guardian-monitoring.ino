@@ -9,7 +9,7 @@ DHTesp dht;
 
 #define DHT_PIN 15
 #define POT_ACTIVITY 34
-#define POT_HEART 35
+#define POT_HEART 32
 #define BUZZER 14
 const char* API_URL = "http://enderecoDaApiDeC#/api/sensor-readings";
 
@@ -45,11 +45,11 @@ int alertId = 0;
 String traduzirAlerta(String a) {
   if (a == "NO_ALERT")          return "Sem alerta";
   if (a == "HIGH_TEMP")         return "Temp. alta";
-  if (a == "HIGH_BPM")          return "BPM elevado";
+  if (a == "HIGH_BPM")          return "Bpm elevado";
   if (a == "LOW_ACTIVITY")      return "Ativ. baixa";
-  if (a == "TEMP_BPM_HIGH")     return "Temp+BPM altos";
-  if (a == "BPM_LOW_ACTIVITY")  return "BPM+baixa ativ.";
-  if (a == "TEMP_LOW_ACTIVITY") return "Temp+baixa ativ.";
+  if (a == "TEMP_BPM_HIGH")     return "Temp e bpm altos";
+  if (a == "BPM_LOW_ACTIVITY")  return "Bpm e ativ. baixa";
+  if (a == "TEMP_LOW_ACTIVITY") return "Temp. e ativ. baixa";
   if (a == "GENERAL_RISK")      return "Risco geral";
   return a;
 }
